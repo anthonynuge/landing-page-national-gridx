@@ -11,7 +11,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <img src="/logo-placeholder.png" alt="Logo" className="h-8 w-auto" />
+          <Link href="/">
+            <img
+              src="/logo-placeholder.png"
+              alt="Logo"
+              className="h-8 w-auto"
+            />
+          </Link>
         </div>
 
         {/* Desktop Nav */}
@@ -54,20 +60,22 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-gray-800">
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
-            About Us
-          </Link>
-          <Link href="/#services" onClick={() => setMenuOpen(false)}>
-            Services
-          </Link>
-          <Link href="/#partners" onClick={() => setMenuOpen(false)}>
-            Channel Partners
-          </Link>
-          <Link href="/#contact" onClick={() => setMenuOpen(false)}>
-            <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
-              Contact Us
-            </button>
-          </Link>
+          <div className="flex flex-col gap-4">
+            <Link href="/about" onClick={() => setMenuOpen(false)}>
+              About Us
+            </Link>
+            <Link href="/#services" onClick={() => setMenuOpen(false)}>
+              Services
+            </Link>
+            <Link href="/#partners" onClick={() => setMenuOpen(false)}>
+              Channel Partners
+            </Link>
+            <Link href="/#contact" onClick={() => setMenuOpen(false)}>
+              <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
+                Contact Us
+              </button>
+            </Link>
+          </div>
         </div>
       )}
     </header>
