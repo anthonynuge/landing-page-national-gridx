@@ -16,7 +16,6 @@ const Footer = () => {
               width={150}
               height={50}
             />
-            <p className="mt-1 text-sm font-semibold">ENERGY CONSULTING</p>
           </div>
 
           <div className="text-sm text-gray-800 mb-4">
