@@ -1,3 +1,4 @@
+import ConsultationCTASection from "@/components/ConsultationCTASection";
 import ConsultingServicesSection from "@/components/ConsultingServicesSection";
 import DemandResponseSection from "@/components/DemandResponseSection";
 import EnergyAuditSection from "@/components/EnergyAuditSection";
@@ -20,6 +21,7 @@ export default function ServicesPage() {
       <EnergyProcurementSection />
       <DemandResponseSection />
       <UtilityBillManagementSection />
+      <ConsultationCTASection />
     </PageWrapper>
   );
 }
