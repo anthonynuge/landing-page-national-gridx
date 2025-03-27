@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -38,9 +39,11 @@ const HeroSection = () => {
         {/* Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="rounded-xl overflow-hidden border-4 border-red-300">
-            <img
-              src="/teammeeting.jpg"
+            <Image
+              src="/home/hero.jpg"
               alt="Energy Grid"
+              width={600}
+              height={400}
               className="w-full h-auto object-cover"
             />
           </div>

@@ -1,5 +1,7 @@
 import React from "react";
+// import  as LaunchIcon } from "/icons/launch.svg";
 import Reveal from "./animations/Reveal";
+import Image from "next/image";
 
 const ServicesSection = () => {
   return (
@@ -21,7 +23,14 @@ const ServicesSection = () => {
             <div className="space-y-10">
               <div>
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                  <div className="text-3xl mb-2">💰</div>
+                  <div className="text-3xl mb-2">
+                    <Image
+                      src="/icons/savings.svg"
+                      alt="Lauch"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg">Cost Savings</h3>
                   <p className="text-gray-600 text-sm">
                     Reduce your energy expenses with our strategic consulting
@@ -31,7 +40,14 @@ const ServicesSection = () => {
               </div>
               <div>
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                  <div className="text-3xl mb-2">♻️</div>
+                  <div className="text-3xl mb-2">
+                    <Image
+                      src="/icons/sustainability.svg"
+                      alt="Lauch"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg">
                     Sustainability Focus
                   </h3>
@@ -46,7 +62,9 @@ const ServicesSection = () => {
             {/* Center Image */}
             <div className="flex justify-center">
               <div className="rounded-xl overflow-hidden shadow-md max-w-md">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   src="/home/4.jpg"
                   alt="Energy Tech"
                   className="w-full h-auto object-cover"
@@ -58,7 +76,14 @@ const ServicesSection = () => {
             <div className="space-y-10">
               <div>
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                  <div className="text-3xl mb-2">🧠</div>
+                  <div className="text-3xl mb-2">
+                    <Image
+                      src="/icons/advanced.svg"
+                      alt="Lauch"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg">Advanced Technology</h3>
                   <p className="text-gray-600 text-sm">
                     Leverage cutting-edge technology for smarter energy
@@ -68,7 +93,15 @@ const ServicesSection = () => {
               </div>
               <div>
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                  <div className="text-3xl mb-2">🚀</div>
+                  <div className="text-3xl mb-2">
+                    {/* <LaunchIcon className="w-12 h-12" /> */}
+                    <Image
+                      src="/icons/launch.svg"
+                      alt="Lauch"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg">Get Started</h3>
                   <p className="text-gray-600 text-sm">
                     Join us in revolutionizing your energy strategy for a

@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "./animations/Reveal";
+import Image from "next/image";
 
 const EmpowerSection = () => {
   return (
@@ -9,8 +10,10 @@ const EmpowerSection = () => {
           {/* Left Image */}
           <div className="w-full lg:w-1/2">
             <div className="rounded-xl overflow-hidden shadow-md">
-              <img
+              <Image
                 src="/home/5.jpg"
+                width={500}
+                height={500}
                 alt="Energy Infrastructure"
                 className="w-full h-auto object-cover"
               />
@@ -20,8 +23,22 @@ const EmpowerSection = () => {
           {/* Right Content */}
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-4 mb-4 text-3xl">
-              <span className="text-green-600">✅</span>
-              <span className="text-black">⚡</span>
+              <span className="text-green-600">
+                <Image
+                  src="/icons/trusted.svg"
+                  alt="trusted shield"
+                  width={80}
+                  height={80}
+                />
+              </span>
+              <span className="text-black">
+                <Image
+                  src="/icons/lightning.svg"
+                  alt="lightening bold"
+                  width={80}
+                  height={80}
+                />
+              </span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
               Secured Energy Future with Us
