@@ -1,5 +1,6 @@
 "use client"; // Only needed if using /app directory in Next.js 13+
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -12,10 +13,12 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
-            <img
+            <Image
               src="/logos/nationalgridblack.png"
               alt="Logo"
-              className="h-8 w-auto"
+              width={80}
+              height={80}
+              className=" w-auto"
             />
           </Link>
         </div>
@@ -23,7 +26,7 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
           <Link href="/about">About Us</Link>
-          <Link href="/#services">Services</Link>
+          <Link href="/services">Services</Link>
           <Link href="/#partners">Channel Partners</Link>
         </nav>
 
