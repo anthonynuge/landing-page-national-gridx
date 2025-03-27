@@ -17,7 +17,7 @@ const CardsSection = () => {
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
                 <img
-                  src="/herobackground.jpeg"
+                  src="/home/6.jpg"
                   alt="Energy Management"
                   className="w-full h-auto object-cover"
                 />
@@ -35,7 +35,7 @@ const CardsSection = () => {
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
                 <img
-                  src="/herobackground.jpeg"
+                  src="/home/7.jpg"
                   alt="Energy Markets"
                   className="w-full h-auto object-cover"
                 />
@@ -54,7 +54,7 @@ const CardsSection = () => {
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
                 <img
-                  src="/herobackground.jpeg"
+                  src="/home/8.jpg"
                   alt="Sustainable Solutions"
                   className="w-full h-auto object-cover"
                 />

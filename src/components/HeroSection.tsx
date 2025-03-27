@@ -2,7 +2,13 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white relative">
+    <section className=" relative">
+      {/* Optional background image (like your cloudy mountain view) */}
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center opacity-70"
+        style={{ backgroundImage: 'url("/home/3.jpg")' }}
+      ></div>
+
       <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -33,19 +39,13 @@ const HeroSection = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="rounded-xl overflow-hidden border-4 border-red-300">
             <img
-              src="/herobackground.jpeg"
+              src="/teammeeting.jpg"
               alt="Energy Grid"
               className="w-full h-auto object-cover"
             />
           </div>
         </div>
       </div>
-
-      {/* Optional background image (like your cloudy mountain view) */}
-      <div
-        className="absolute inset-0 -z-10 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: 'url("/background-placeholder.jpg")' }}
-      ></div>
     </section>
   );
 };

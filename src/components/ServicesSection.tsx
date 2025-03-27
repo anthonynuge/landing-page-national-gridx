@@ -47,7 +47,7 @@ const ServicesSection = () => {
             <div className="flex justify-center">
               <div className="rounded-xl overflow-hidden shadow-md max-w-md">
                 <img
-                  src="/herobackground.jpeg"
+                  src="/home/4.jpg"
                   alt="Energy Tech"
                   className="w-full h-auto object-cover"
                 />

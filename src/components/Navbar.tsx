@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link href="/">
             <img
-              src="/logo-placeholder.png"
+              src="/logos/nationalgridblack.png"
               alt="Logo"
               className="h-8 w-auto"
             />

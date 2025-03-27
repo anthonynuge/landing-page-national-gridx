@@ -10,7 +10,7 @@ const EmpowerSection = () => {
           <div className="w-full lg:w-1/2">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="/herobackground.jpeg"
+                src="/home/5.jpg"
                 alt="Energy Infrastructure"
                 className="w-full h-auto object-cover"
               />

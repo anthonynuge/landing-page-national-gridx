@@ -1,5 +1,9 @@
 import PageWrapper from "@/components/PageWrapper";
-import AboutContent from "./AboutContent";
+import TeamSection from "@/components/TeamSection";
+import SolutionsOverview from "@/components/SolutionsOverview";
+import CTA from "@/components/CTA";
+import HeroBanner from "@/components/HeroBanner";
+import Expertise from "@/components/Expertise";
 
 export const metadata = {
   title: "About Us – National Grid X",
@@ -9,7 +13,11 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <PageWrapper>
-      <AboutContent />
+      <HeroBanner />
+      <Expertise />
+      <TeamSection />
+      <SolutionsOverview />
+      <CTA />
     </PageWrapper>
   );
 }
