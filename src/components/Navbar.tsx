@@ -32,7 +32,7 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-          <Link href="/#contact">
+          <Link href="/contact">
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
               Contact Us
             </button>
