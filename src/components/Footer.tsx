@@ -9,9 +9,9 @@ const Footer = () => {
         {/* Left: Logo and Info */}
         <div>
           {/* Replace with actual logo image if needed */}
-          <div className="mb-4 w-[120px] h-auto w-auto">
+          <div className="mb-4 w-[120px] h-auto">
             <Image
-              src="/logos/ngxblack.png"
+              src="/logos/NGXblack.png"
               alt="NGX Logo"
               width={120}
               height={40}
