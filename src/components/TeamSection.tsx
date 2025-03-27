@@ -1,6 +1,7 @@
 "use client";
 
 import Reveal from "@/components/animations/Reveal";
+import Image from "next/image";
 
 const team = [
   {
@@ -82,9 +83,11 @@ export default function TeamSection() {
           {team.map((member, index) => (
             <Reveal key={member.name} delay={index * 0.05}>
               <div className="flex flex-col items-center text-center">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={250}
+                  height={250}
                   className="w-full max-w-[250px] aspect-square object-cover rounded-lg shadow"
                 />
                 <h3 className="font-semibold mt-4">{member.name}</h3>

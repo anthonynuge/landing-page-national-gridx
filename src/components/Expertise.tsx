@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "./animations/Reveal";
+import Image from "next/image";
 
 const Expertise = () => {
   return (
@@ -8,8 +9,10 @@ const Expertise = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left Image */}
           <div className="w-full lg:w-1/2">
-            <img
+            <Image
               src="/about/2.jpg"
+              width={450}
+              height={450}
               alt="Team Meeting"
               className="rounded-xl w-full object-cover"
             />

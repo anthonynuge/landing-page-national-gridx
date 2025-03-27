@@ -43,6 +43,7 @@ const HeroSection = () => {
               alt="Energy Grid"
               width={600}
               height={400}
+              priority
               className="w-full h-auto object-cover"
             />
           </div>

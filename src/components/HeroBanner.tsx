@@ -1,12 +1,17 @@
 import React from "react";
 import Reveal from "./animations/Reveal";
+import Image from "next/image";
 const HeroBanner = () => {
   return (
     <Reveal>
       <section className="relative h-[70vh] flex items-center justify-center text-center px-4">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/about/1.jpg"
+            fill
+            sizes="(max-width: 768px) 100vw,
+               (max-width: 1200px) 100vw,
+               100vw"
             alt="Hero Background"
             className="w-full h-full object-cover opacity-70"
           />

@@ -1,14 +1,17 @@
 "use client";
 
 import Reveal from "@/components/animations/Reveal";
+import Image from "next/image";
 
 export default function CTA() {
   return (
     <section className="relative py-20 px-4 bg-gray-900 text-white text-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/about/3.jpg"
           alt="Background"
+          width={500}
+          height={500}
           className="w-full h-full object-cover opacity-30"
         />
       </div>

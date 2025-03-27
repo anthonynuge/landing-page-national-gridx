@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "./animations/Reveal";
+import Image from "next/image";
 
 const CardsSection = () => {
   return (
@@ -16,8 +17,10 @@ const CardsSection = () => {
             {/* Card 1 */}
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
-                <img
+                <Image
                   src="/home/6.jpg"
+                  width={350}
+                  height={350}
                   alt="Energy Management"
                   className="w-full h-auto object-cover"
                 />
@@ -34,8 +37,10 @@ const CardsSection = () => {
             {/* Card 2 */}
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
-                <img
+                <Image
                   src="/home/7.jpg"
+                  width={350}
+                  height={350}
                   alt="Energy Markets"
                   className="w-full h-auto object-cover"
                 />
@@ -53,8 +58,10 @@ const CardsSection = () => {
             {/* Card 3 */}
             <div className="flex flex-col items-center text-center">
               <div className="rounded-md overflow-hidden mb-4 w-full max-w-sm">
-                <img
+                <Image
                   src="/home/8.jpg"
+                  width={350}
+                  height={350}
                   alt="Sustainable Solutions"
                   className="w-full h-auto object-cover"
                 />
