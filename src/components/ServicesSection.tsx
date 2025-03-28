@@ -2,6 +2,7 @@ import React from "react";
 // import  as LaunchIcon } from "/icons/launch.svg";
 import Reveal from "./animations/Reveal";
 import Image from "next/image";
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -117,9 +118,11 @@ const ServicesSection = () => {
             <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
               Learn More
             </button>
-            <button className="text-black hover:underline text-lg flex items-center gap-1">
-              Contact Us <span className="text-xl">›</span>
-            </button>
+            <Link href="/contact" className="flex items-center gap-1">
+              <button className="text-black hover:underline text-lg flex items-center gap-1">
+                Contact Us <span className="text-xl">›</span>
+              </button>
+            </Link>
           </div>
         </div>
       </section>

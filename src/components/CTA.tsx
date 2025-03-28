@@ -2,6 +2,7 @@
 
 import Reveal from "@/components/animations/Reveal";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -35,9 +36,11 @@ export default function CTA() {
             <button className="bg-white text-black px-6 py-2 rounded hover:bg-gray-100 transition">
               Learn More
             </button>
-            <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
-              Contact Us
-            </button>
+            <Link href="/contact">
+              <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </Reveal>
       </div>

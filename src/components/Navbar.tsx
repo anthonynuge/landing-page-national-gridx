@@ -73,7 +73,7 @@ export default function Navbar() {
             <Link href="/#partners" onClick={() => setMenuOpen(false)}>
               Channel Partners
             </Link>
-            <Link href="/#contact" onClick={() => setMenuOpen(false)}>
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
               <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
                 Contact Us
               </button>

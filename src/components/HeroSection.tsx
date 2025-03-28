@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -29,9 +30,11 @@ const HeroSection = () => {
             <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">
               Learn More
             </button>
-            <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
-              Contact Us
-            </button>
+            <Link href={"/contact"}>
+              <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
 
