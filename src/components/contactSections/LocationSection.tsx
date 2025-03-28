@@ -14,7 +14,7 @@ const LocationSection = () => {
 
           <div className="w-full h-80 relative mb-10 rounded-lg overflow-hidden">
             <Image
-              src="/contact/building.jpg" // Replace with your actual path
+              src="/contact/3.jpg" // Replace with your actual path
               alt="Office Location"
               fill
               className="object-cover"

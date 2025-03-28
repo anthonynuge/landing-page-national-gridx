@@ -66,7 +66,7 @@ const ContactInfoSection = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2 relative h-96">
             <Image
-              src="/contact/phone.jpg" // Replace with your actual image path
+              src="/contact/2.jpg" // Replace with your actual image path
               alt="Contact Support"
               fill
               className="object-cover rounded-lg"

@@ -4,7 +4,7 @@ const ContactHeroSection = () => {
       {/* Background */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center opacity-70"
-        style={{ backgroundImage: 'url("/contact/hero.jpg")' }} // Replace with your actual image path
+        style={{ backgroundImage: 'url("/contact/1.jpg")' }} // Replace with your actual image path
       ></div>
 
       {/* Content */}
