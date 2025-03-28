@@ -16,6 +16,7 @@ const LocationSection = () => {
             <Image
               src="/contact/3.jpg" // Replace with your actual path
               alt="Office Location"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               fill
               className="object-cover"
             />
