@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Socials */}
           <div className="flex items-center space-x-4 text-xl">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61564068329354"
               target="_blank"
               aria-label="Facebook"
             >
@@ -46,7 +46,7 @@ const Footer = () => {
               <FaInstagram />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/ngxenergy/?viewAsMember=true"
               target="_blank"
               aria-label="LinkedIn"
             >
