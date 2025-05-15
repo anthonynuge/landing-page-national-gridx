@@ -27,7 +27,7 @@ export default function Navbar() {
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
           <Link href="/about">About Us</Link>
           <Link href="/services">Services</Link>
-          <Link href="/#partners">Channel Partners</Link>
+          <Link href="/channel-partners">Channel Partners</Link>
         </nav>
 
         {/* Contact Button */}
@@ -62,15 +62,15 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2 text-gray-800">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg px-4 pb-4 space-y-2 text-gray-800">
           <div className="flex flex-col gap-4">
             <Link href="/about" onClick={() => setMenuOpen(false)}>
               About Us
             </Link>
-            <Link href="/#services" onClick={() => setMenuOpen(false)}>
+            <Link href="/services" onClick={() => setMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/#partners" onClick={() => setMenuOpen(false)}>
+            <Link href="/channel-partners" onClick={() => setMenuOpen(false)}>
               Channel Partners
             </Link>
             <Link href="/contact" onClick={() => setMenuOpen(false)}>
