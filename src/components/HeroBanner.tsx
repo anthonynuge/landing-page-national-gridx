@@ -5,7 +5,7 @@ import Link from "next/link";
 const HeroBanner = () => {
   return (
     <Reveal>
-      <section className="relative h-[70vh] flex items-center justify-center text-center px-4">
+      <section className="relative h-[50vh] lg:h-[70vh] flex items-center justify-center text-center px-4">
         <div className="absolute inset-0">
           <Image
             src="/about/1.jpg"
@@ -28,7 +28,7 @@ const HeroBanner = () => {
               Learn More
             </button>
             <Link href="/contact">
-              <button className="border border-black text-black px-6 py-2 rounded hover:bg-gray-100 transition">
+              <button className="border border-black text-black px-6 py-2 rounded hover:bg-gray-100 transition w-full">
                 Contact Us
               </button>
             </Link>
