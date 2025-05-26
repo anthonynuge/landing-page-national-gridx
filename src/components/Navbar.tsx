@@ -27,7 +27,7 @@ export default function Navbar() {
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
           <Link href="/about">About Us</Link>
           <Link href="/services">Services</Link>
-          <Link href="/channel-partners">Channel Partners</Link>
+          {/* <Link href="/channel-partners">Channel Partners</Link> */}
         </nav>
 
         {/* Contact Button */}
@@ -70,9 +70,9 @@ export default function Navbar() {
             <Link href="/services" onClick={() => setMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/channel-partners" onClick={() => setMenuOpen(false)}>
+            {/* <Link href="/channel-partners" onClick={() => setMenuOpen(false)}>
               Channel Partners
-            </Link>
+            </Link> */}
             <Link href="/contact" onClick={() => setMenuOpen(false)}>
               <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
                 Contact Us
