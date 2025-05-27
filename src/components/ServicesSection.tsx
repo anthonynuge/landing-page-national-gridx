@@ -109,10 +109,12 @@ const ServicesSection = () => {
         </div>
 
         {/* Buttons */}
-        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-          <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
-            Learn More
-          </button>
+        <div className="mt-12 flex flex-row justify-center gap-4">
+          <Link href="/about">
+            <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
+              Learn More
+            </button>
+          </Link>
           <Link href="/contact" className="flex items-center gap-1">
             <button className="text-black hover:underline text-lg flex items-center gap-1">
               Contact Us <span className="text-xl">›</span>
