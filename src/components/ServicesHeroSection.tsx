@@ -1,15 +1,20 @@
+import Image from "next/image";
 const ServicesHeroSection = () => {
   return (
-    <section className="relative">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 -z-10 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: 'url("/services/1.jpg")' }} // ← use your actual image path
-      ></div>
+    <section className="relative h-[40vh] w-full overflow-hidden">
+      {/* Optimized Background Image */}
+      <Image
+        src="/services/1.jpg" // Replace with actual path
+        alt="Our Services"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-40 -z-10"
+      />
 
       {/* Content Container */}
       <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col items-center text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
           Comprehensive
           <br />
           Energy Solutions
