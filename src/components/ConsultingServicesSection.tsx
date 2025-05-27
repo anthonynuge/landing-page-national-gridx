@@ -44,6 +44,7 @@ const ConsultingServicesSection = () => {
                   src={service.image}
                   alt={service.alt}
                   fill
+                  sizes="(min-width: 640px) 33.33vw, 100vw"
                   className="object-cover rounded-md"
                 />
               </div>

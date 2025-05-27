@@ -55,6 +55,7 @@ const DemandResponseSection = () => {
               src="/services/8.jpg"
               alt="Demand Response Visualization"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover rounded-lg"
             />
           </div>
