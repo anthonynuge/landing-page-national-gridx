@@ -19,6 +19,7 @@ export default function Navbar() {
               width={80}
               height={80}
               className=" w-auto"
+              priority
             />
           </Link>
         </div>

@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-gray-900">
+          <h1 className="text-3xl sm:text-5xl font-bold leading-tight mb-6 text-gray-900">
             Empowering Your
             <br />
             Energy Decision for a<br />
@@ -27,11 +27,13 @@ const HeroSection = () => {
             sustainability goals with confidence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">
-              Learn More
-            </button>
-            <Link href={"/contact"}>
-              <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition">
+            <Link href="/about">
+              <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition w-full">
+                Learn More
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className="border border-black text-black px-6 py-3 rounded-md hover:bg-gray-100 transition w-full">
                 Contact Us
               </button>
             </Link>

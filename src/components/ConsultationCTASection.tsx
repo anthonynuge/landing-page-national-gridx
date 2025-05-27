@@ -30,6 +30,7 @@ const ConsultationCTASection = () => {
                 src="/services/9.jpg"
                 alt="Consultation Meeting"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

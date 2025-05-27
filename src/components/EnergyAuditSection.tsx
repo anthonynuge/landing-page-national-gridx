@@ -68,6 +68,7 @@ const EnergyAuditsSection = () => {
               src="/services/5.jpg"
               alt="Energy Audit"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover rounded-lg"
             />
           </div>

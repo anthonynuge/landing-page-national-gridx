@@ -10,13 +10,12 @@ const Footer = () => {
           {/* Left: Logo and Info */}
           <div className="flex-1">
             {/* Replace with actual logo image if needed */}
-            <div className="mb-4 w-[120px] h-auto">
+            <div className="mb-4 ">
               <Image
                 src="/logos/NGXblack.png"
                 alt="NGX Logo"
                 width={120}
                 height={40}
-                priority
               />
             </div>
 

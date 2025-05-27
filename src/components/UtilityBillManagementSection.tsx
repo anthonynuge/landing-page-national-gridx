@@ -12,6 +12,7 @@ const UtilityBillManagementSection = () => {
               src="/services/7.jpg"
               alt="Utility Bill Management"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover rounded-lg"
             />
           </div>
