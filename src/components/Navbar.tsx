@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import BtnHoverUnderline from "./shared/BtnHoverUnderline";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,8 +27,8 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
-          <Link href="/about">About Us</Link>
-          <Link href="/services">Services</Link>
+          <BtnHoverUnderline text="About Us" href="/about" />
+          <BtnHoverUnderline text="Services" href="/services" />
           {/* <Link href="/channel-partners">Channel Partners</Link> */}
         </nav>
 
