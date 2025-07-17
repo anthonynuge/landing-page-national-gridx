@@ -4,6 +4,7 @@ import DemandResponseSection from "@/components/DemandResponseSection";
 import EnergyAuditSection from "@/components/EnergyAuditSection";
 import EnergyProcurementSection from "@/components/EnergyProcurment";
 import PageWrapper from "@/components/layout/PageWrapper";
+import FaqSection from "@/components/services/FaqSection";
 import HeroLayout from "@/components/shared/HeroLayout";
 import UtilityBillManagementSection from "@/components/UtilityBillManagementSection";
 
@@ -22,6 +23,7 @@ export default function ServicesPage() {
       />
       <PageWrapper>
         <ConsultingServicesSection />
+        <FaqSection />
         <EnergyAuditSection />
         <EnergyProcurementSection />
         <DemandResponseSection />
