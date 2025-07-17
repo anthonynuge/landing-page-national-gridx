@@ -4,7 +4,7 @@ import DemandResponseSection from "@/components/DemandResponseSection";
 import EnergyAuditSection from "@/components/EnergyAuditSection";
 import EnergyProcurementSection from "@/components/EnergyProcurment";
 import PageWrapper from "@/components/layout/PageWrapper";
-import ServicesHeroSection from "@/components/services/ServicesHeroSection";
+import HeroLayout from "@/components/shared/HeroLayout";
 import UtilityBillManagementSection from "@/components/UtilityBillManagementSection";
 
 export const metadata = {
@@ -15,7 +15,11 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <ServicesHeroSection />
+      <HeroLayout
+        title="Our Services"
+        description="We offer a range of services to help businesses take control of their energy decisions."
+        imageUrl="/services/1.jpg"
+      />
       <PageWrapper>
         <ConsultingServicesSection />
         <EnergyAuditSection />
