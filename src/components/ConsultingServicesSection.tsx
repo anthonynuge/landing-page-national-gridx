@@ -28,7 +28,7 @@ const services = [
 
 const ConsultingServicesSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className=" bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
           Unlock Your Energy Potential with Our
