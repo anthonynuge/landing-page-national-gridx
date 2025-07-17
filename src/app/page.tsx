@@ -1,10 +1,10 @@
-import CardsSection from "@/components/CardsSection";
 import HeroSection from "@/components/home/HeroSection";
 import SecureSection from "@/components/SecureSection";
 import ServiceSection from "@/components/home/ServiceSection";
 import OurCustomersSection from "@/components/home/OurCustomersSection";
 import StatsSection from "@/components/home/StatsSection";
 import PageWrapper from "@/components/layout/PageWrapper";
+import EmpowerSection from "@/components/home/EmpowerSection";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <OurCustomersSection />
       <PageWrapper>
         <SecureSection />
-        <CardsSection />
+        <EmpowerSection />
       </PageWrapper>
     </>
   );
