@@ -1,9 +1,10 @@
-import PageWrapper from "@/components/PageWrapper";
-import TeamSection from "@/components/TeamSection";
+// import PageWrapper from "@/components/PageWrapper";
+import TeamSection from "@/components/about/TeamSection";
 import SolutionsOverview from "@/components/SolutionsOverview";
 import CTA from "@/components/CTA";
 import HeroBanner from "@/components/HeroBanner";
 import Expertise from "@/components/Expertise";
+import PageWrapper from "@/components/layout/PageWrapper";
 
 export const metadata = {
   title: "About Us – National Grid X",
@@ -12,12 +13,15 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <PageWrapper>
+    <>
       <HeroBanner />
-      <Expertise />
-      <TeamSection />
-      <SolutionsOverview />
-      <CTA />
-    </PageWrapper>
+
+      <PageWrapper>
+        <Expertise />
+        <TeamSection />
+        <SolutionsOverview />
+        <CTA />
+      </PageWrapper>
+    </>
   );
 }
