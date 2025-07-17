@@ -20,7 +20,7 @@ const stats = [
   },
   {
     label: "kWh Managed",
-    value: 480000000,
+    value: 48000000,
     suffix: "+",
   },
 ];
@@ -33,7 +33,7 @@ export default function StatsSection() {
           In the Numbers
         </h2>
 
-        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 sm:text-center gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:text-center gap-8 mb-16">
           {stats.map((stat, i) => (
             <div key={i}>
               <AnimatedNumber

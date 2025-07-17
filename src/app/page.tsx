@@ -4,16 +4,22 @@ import SecureSection from "@/components/SecureSection";
 import ServiceSection from "@/components/home/ServiceSection";
 import OurCustomersSection from "@/components/home/OurCustomersSection";
 import StatsSection from "@/components/home/StatsSection";
+import PageWrapper from "@/components/layout/PageWrapper";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <ServiceSection />
-      <StatsSection />
+
+      <PageWrapper>
+        <ServiceSection />
+        <StatsSection />
+      </PageWrapper>
       <OurCustomersSection />
-      <SecureSection />
-      <CardsSection />
+      <PageWrapper>
+        <SecureSection />
+        <CardsSection />
+      </PageWrapper>
     </>
   );
 }
