@@ -3,8 +3,8 @@ import ConsultingServicesSection from "@/components/ConsultingServicesSection";
 import DemandResponseSection from "@/components/DemandResponseSection";
 import EnergyAuditSection from "@/components/EnergyAuditSection";
 import EnergyProcurementSection from "@/components/EnergyProcurment";
-import PageWrapper from "@/components/PageWrapper";
-import ServicesHeroSection from "@/components/ServicesHeroSection";
+import PageWrapper from "@/components/layout/PageWrapper";
+import ServicesHeroSection from "@/components/services/ServicesHeroSection";
 import UtilityBillManagementSection from "@/components/UtilityBillManagementSection";
 
 export const metadata = {
@@ -14,14 +14,16 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <PageWrapper>
+    <>
       <ServicesHeroSection />
-      <ConsultingServicesSection />
-      <EnergyAuditSection />
-      <EnergyProcurementSection />
-      <DemandResponseSection />
-      <UtilityBillManagementSection />
-      <ConsultationCTASection />
-    </PageWrapper>
+      <PageWrapper>
+        <ConsultingServicesSection />
+        <EnergyAuditSection />
+        <EnergyProcurementSection />
+        <DemandResponseSection />
+        <UtilityBillManagementSection />
+        <ConsultationCTASection />
+      </PageWrapper>
+    </>
   );
 }
