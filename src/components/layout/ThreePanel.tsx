@@ -20,12 +20,12 @@ export default function ThreePanel({ title, items }: ThreePanelProps) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 2xl:gap-6">
         {items.map((item, i) => (
           <div key={i} className="group">
-            <div className="relative h-120 w-full">
+            <div className="relative h-70 md:h-120 w-full">
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
             </div>
             <div>
