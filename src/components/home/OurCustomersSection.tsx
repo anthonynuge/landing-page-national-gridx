@@ -3,17 +3,20 @@
 import Image from "next/image";
 
 const logos = [
-  "/logos/coinbase.svg",
-  "/logos/samsung.svg",
-  "/logos/mlb.svg",
-  "/logos/googlepay.svg",
-  "/logos/lenovo.svg",
-  "/logos/dior.svg",
+  "/logos/intuit.svg",
+  "/logos/lg.svg",
+  "/logos/sidekicks.png",
+  "/logos/intuit.svg",
+  "/logos/lg.svg",
+  "/logos/sidekicks.png",
+  "/logos/intuit.svg",
+  "/logos/lg.svg",
+  "/logos/sidekicks.png",
 ];
 
 const OurCustomersSection = () => {
   return (
-    <section className="py-16 sm:py-20 px-6 bg-[#E0DBDB] overflow-hidden">
+    <section className="min-h-[50vh] sm:my-52 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-xl md:text-2xl font-bold mb-4">
           <span className="font-bold">Our</span> Customers
