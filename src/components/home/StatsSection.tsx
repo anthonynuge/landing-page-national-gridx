@@ -29,8 +29,8 @@ export default function StatsSection() {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-xs uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-12">
-          In the Numbers
+        <h2 className="text-xl uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-12">
+          The Numbers
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:text-center gap-8 mb-16">

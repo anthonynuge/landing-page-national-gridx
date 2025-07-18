@@ -45,7 +45,7 @@ export function CarouselSize() {
 
 export default function ServiceSection() {
   return (
-    <section className="h-screen w-full flex items-center justify-center">
+    <section className="h-full w-full flex items-center justify-center">
       <div className="max-w-7xl w-full px-4 flex flex-col gap-10">
         <h2 className="text-4xl font-bold">Client Solutions</h2>
         <p className="text-lg text-muted-foreground max-w-2xl">
