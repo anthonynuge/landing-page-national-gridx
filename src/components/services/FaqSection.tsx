@@ -17,7 +17,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="min-h-[80vh] w-full max-w-7xl mx-auto">
+    <section className=" w-full max-w-7xl mx-auto">
       <div className="container-base grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-3xl md:text-6xl font-bold leading-tight">
