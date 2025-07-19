@@ -25,7 +25,11 @@ export default function EmpowerSection() {
   return (
     <section className="py-24 min-h-[90vh]">
       <div className="max-w-7xl mx-auto">
-        <ThreePanel title="Empower Your Energy Decisions" items={services} />
+        <ThreePanel
+          title="Empower Your Energy Decisions"
+          subTitle="Energy Solutions"
+          items={services}
+        />
       </div>
     </section>
   );

@@ -31,7 +31,8 @@ const ConsultingServicesSection = () => {
     <section className="h-full ">
       <div className="max-w-7xl mx-auto">
         <ThreePanel
-          title="Unlock Your Energy Potential with Our Comprehensive Consulting Services"
+          title="Unlock Your Energy Potential"
+          subTitle="Consulting Services"
           items={services}
         />
       </div>

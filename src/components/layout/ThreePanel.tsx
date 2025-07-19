@@ -8,13 +8,25 @@ export type ThreePanelItem = {
 
 type ThreePanelProps = {
   title: string;
+  subTitle: string;
   items: ThreePanelItem[];
 };
 
-export default function ThreePanel({ title, items }: ThreePanelProps) {
+export default function ThreePanel({
+  title,
+  subTitle,
+  items,
+}: ThreePanelProps) {
   return (
     <>
-      <h2 className="text-xs uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-6">
+      {/* <h2 className="text-xs uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-6">
+        {title}
+      </h2> */}
+
+      <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
+        {subTitle}
+      </p>
+      <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
         {title}
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 2xl:gap-6">
