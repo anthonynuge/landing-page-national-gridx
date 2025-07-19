@@ -29,7 +29,7 @@ export default function HeroSection({
           </h1>
 
           {/* Description + Scroll Icon */}
-          <div className="flex flex-col justify-between md:gap-4 2xl:h-[12rem]">
+          <div className="flex flex-col justify-between gap-2 md:gap-4 2xl:h-[12rem]">
             <p className="text-lg lg:text-xl 2xl:text-2xl font-semibold">
               {description}
             </p>
