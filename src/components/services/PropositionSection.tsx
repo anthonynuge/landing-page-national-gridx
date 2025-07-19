@@ -6,7 +6,7 @@ export default function PropositionSection() {
     <section className="h-full">
       <div className="max-w-7xl mx-auto space-y-4 md:space-y-12">
         <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-12">
-          <div className="w-full md:w-[60%]">
+          <div className="w-full md:w-[40%]">
             <Zap className="text-red-500 w-12 h-12 lg:w-16 lg:h-16" />
           </div>
           <h2 className="text-xl md:text-4xl xl:text-7xl font-bold text-gray-900 leading-tight bg">
