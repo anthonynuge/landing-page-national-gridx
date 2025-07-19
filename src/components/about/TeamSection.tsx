@@ -5,9 +5,10 @@ export default function TeamSection() {
   return (
     <div className="max-w-7xl mx-auto space-y-32">
       {teamGroups.map((group) => (
-        // <TeamAccordion key={group.group} members={group.members} />
         <div key={group.group} className="space-y-10">
-          <h2 className="text-4xl font-semibold">{group.group}</h2>
+          <p className="ml-0 md:ml-24 text-lg text-gray-500 uppercase tracking-wide mb-1">
+            {group.group}
+          </p>
           <TeamAccordion members={group.members} />
         </div>
       ))}
