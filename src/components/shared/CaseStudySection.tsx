@@ -47,9 +47,8 @@ export default function CaseStudySection() {
           <Image
             src="/home/three-panel/construction.jpg"
             alt="NGX Energy Client Building"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            fill
+            className="rounded-lg object-cover"
           />
         </div>
       </div>
