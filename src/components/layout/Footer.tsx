@@ -1,22 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import LinkHoverUnderline from "../shared/LinkHoverUnderline";
 
 export default function Footer() {
   return (
     <footer className="bg-[#0d1319] text-gray-200 pt-24 pb-12 px-6">
       {/* Top CTA */}
-      <div className="max-w-7xl mx-auto border-b border-gray-700 pb-16 flex flex-col md:flex-row justify-between items-start gap-6">
-        <h2 className="text-5xl md:text-6xl font-semibold tracking-tight">
-          Get in touch
-        </h2>
-        <Link
-          href="/contact"
-          className="text-white text-3xl md:text-4xl mt-4 md:mt-0 hover:scale-105 transition-transform"
-        >
-          ↗
-        </Link>
-      </div>
+
+      <Link href="/contact">
+        <div className="max-w-7xl mx-auto border-b border-gray-700 pb-16 flex flex-col md:flex-row justify-between items-start gap-6 group relative">
+          <h2 className="text-5xl md:text-6xl font-semibold tracking-tight">
+            Get in touch
+          </h2>
+          <div className="text-3xl md:text-8xl mt-4 md:mt-0">↗</div>
+
+          <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-gray-300/70 group-hover:w-full transition-all duration-300 ease-[cubic-bezier(0.65,0.05,0.36,1)]" />
+        </div>
+      </Link>
 
       {/* Bottom Grid */}
       <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -41,14 +42,9 @@ export default function Footer() {
           </div>
           <div className="text-sm text-gray-400 mb-4">
             <p className="font-semibold">Contact:</p>
-            <p>
-              <a
-                href="mailto:admin@nationalgridx.com"
-                className="hover:underline"
-              >
-                admin@nationalgridx.com
-              </a>
-            </p>
+            <LinkHoverUnderline href="mailto:admin@nationalgridx.com">
+              admin@nationalgridx.com
+            </LinkHoverUnderline>
           </div>
 
           {/* Social Icons */}
@@ -85,36 +81,28 @@ export default function Footer() {
           <h4 className="text-sm font-semibold mb-4 text-gray-400">
             QUICK LINKS
           </h4>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-1 text-sm">
             <li>
-              <Link href="/services" className="hover:underline">
-                Services
-              </Link>
+              <LinkHoverUnderline href="/services">Services</LinkHoverUnderline>
             </li>
             <li>
-              <Link href="/company" className="hover:underline">
-                Company
-              </Link>
+              <LinkHoverUnderline href="/company">Company</LinkHoverUnderline>
             </li>
             <li>
-              <Link href="/contact" className="hover:underline">
-                Contact
-              </Link>
+              <LinkHoverUnderline href="/contact">Contact</LinkHoverUnderline>
             </li>
             <li>
-              <Link href="/careers" className="hover:underline">
-                Careers
-              </Link>
+              <LinkHoverUnderline href="/careers">Careers</LinkHoverUnderline>
             </li>
             <li>
-              <Link href="/terms-conditions" className="hover:underline">
+              <LinkHoverUnderline href="/terms-conditions">
                 Terms of Service
-              </Link>
+              </LinkHoverUnderline>
             </li>
             <li>
-              <Link href="/privacy-policy" className="hover:underline">
+              <LinkHoverUnderline href="/privacy-policy">
                 Privacy Policy
-              </Link>
+              </LinkHoverUnderline>
             </li>
           </ul>
         </div>
