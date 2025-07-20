@@ -1,5 +1,4 @@
 import HeroSection from "@/components/home/HeroSection";
-import SecureSection from "@/components/SecureSection";
 import ServiceSection from "@/components/home/ServiceSection";
 import OurCustomersSection from "@/components/home/OurCustomersSection";
 import StatsSection from "@/components/home/StatsSection";
@@ -18,9 +17,7 @@ export default function Home() {
       </PageWrapper>
       <OurCustomersSection />
       <PageWrapper className="space-y-24 md:space-y-52">
-        {/* <SecureSection /> */}
         <SolutionsSection />
-        {/* <EmpowerSection /> */}
       </PageWrapper>
       <CaseStudySection />
       <PageWrapper className="space-y-24 md:space-y-52">

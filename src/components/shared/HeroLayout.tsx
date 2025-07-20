@@ -6,15 +6,28 @@ type HeroSectionProps = {
   title: string;
   description: string;
   imageUrl: string;
-  scrollTarget?: string;
+  scrollTargetId?: string;
 };
 
 export default function HeroSection({
   title,
   description,
   imageUrl,
-  scrollTarget = "#",
+  scrollTargetId = "#",
 }: HeroSectionProps) {
+  const scrollToSection = () => {
+    const target = document.getElementById(scrollTargetId);
+    if (target) {
+      const offset = 90; // Adjust this to match your nav height
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="relative text-white overflow-hidden h-[80vh] lg:h-[120vh] pl-4 lg:pl-6">
       {/* Dark background */}
@@ -33,13 +46,14 @@ export default function HeroSection({
             <p className="text-lg lg:text-xl 2xl:text-2xl font-semibold">
               {description}
             </p>
-
-            <div className="p-4 w-12 h-12 flex items-center justify-center bg-white rounded-full">
-              <a href={scrollTarget} className="animate-bounce">
+            <div
+              onClick={scrollToSection}
+              className="cursor-pointer p-4 w-12 h-12 flex items-center justify-center bg-white rounded-full group"
+            >
+              <div className="animate-bounce text-black">
                 <svg
                   width="24"
                   height="24"
-                  className="text-foreground"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
@@ -49,7 +63,7 @@ export default function HeroSection({
                 >
                   <path d="M12 4v16M12 20l6-6M12 20l-6-6" />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
         </div>

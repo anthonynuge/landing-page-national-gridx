@@ -9,9 +9,12 @@ export default function InsightsPage() {
         title="Insights"
         description="Stay ahead of the curve with our latest insights and news."
         imageUrl="/insights/news.jpg"
+        scrollTargetId="start"
       />
       <PageWrapper className="space-y-24 md:space-y-52">
-        <ArticleGrid />
+        <div id="start">
+          <ArticleGrid />
+        </div>
       </PageWrapper>
     </>
   );

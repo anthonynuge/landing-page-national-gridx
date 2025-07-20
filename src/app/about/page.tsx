@@ -1,8 +1,5 @@
-// import PageWrapper from "@/components/PageWrapper";
 import TeamSection from "@/components/about/TeamSection";
-import SolutionsOverview from "@/components/SolutionsOverview";
-import CTA from "@/components/CTA";
-import Expertise from "@/components/Expertise";
+// import Expertise from "@/components/Expertise";
 import PageWrapper from "@/components/layout/PageWrapper";
 import HeroLayout from "@/components/shared/HeroLayout";
 
@@ -18,13 +15,13 @@ export default function AboutPage() {
         title="About Us"
         description="Learn more about who we are and how we're helping businesses take control of their energy decisions."
         imageUrl="/about/1.jpg"
+        scrollTargetId="start"
       />
-
       <PageWrapper>
-        <Expertise />
-        <TeamSection />
-        <SolutionsOverview />
-        <CTA />
+        {/* <Expertise /> */}
+        <div id="start">
+          <TeamSection />
+        </div>
       </PageWrapper>
     </>
   );
