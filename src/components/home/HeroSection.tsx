@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden w-full h-screen text-white">
       <Image
-        src="/home/hero2.jpg"
+        src="/home/hero.jpg"
         alt="Hero image"
         fill
         className="object-cover object-center -z-10"
