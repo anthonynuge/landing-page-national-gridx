@@ -19,10 +19,6 @@ export default function ThreePanel({
 }: ThreePanelProps) {
   return (
     <>
-      {/* <h2 className="text-xs uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-6">
-        {title}
-      </h2> */}
-
       <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
         {subTitle}
       </p>
