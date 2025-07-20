@@ -12,11 +12,6 @@ export const faqItems = [
       "We analyze your usage data and current contract terms, then source real-time pricing from top energy providers to find a plan that fits your needs and budget.",
   },
   {
-    question: "Is there a cost to work with NGX Energy?",
-    answer:
-      "There is no direct cost to you. Our compensation typically comes from the energy supplier, allowing us to provide guidance and rate comparisons at no charge to you.",
-  },
-  {
     question: "Can you help with both commercial and residential accounts?",
     answer:
       "Yes. We specialize in commercial energy solutions but also assist residents in deregulated markets who want better control over their electricity plans.",

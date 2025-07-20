@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden w-full h-screen text-white">
       <Image
-        src="/home/hero.jpg"
+        src="/home/hero2.jpg"
         alt="Hero image"
         fill
         className="object-cover object-center -z-10"
@@ -20,10 +20,9 @@ export default function Hero() {
           {/* Left - Heading */}
           <div className="flex items-start md:items-start justify-start md:justify-start w-full md:w-1/2 pt-24">
             <h1 className="text-4xl md:text-8xl font-bold leading-tight tracking-tight">
-              Power
+              Energy
               <br />
-              Reimagined
-              <span className="text-xl align-super ml-1">™</span>
+              Redefined
             </h1>
           </div>
 

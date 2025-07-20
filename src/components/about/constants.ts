@@ -6,53 +6,28 @@ export const teamGroups = [
         id: "1",
         url: "/team/anselm.png",
         title: "Anselm",
-        description: "Chief Operating Officer",
+        description: "President",
         tags: ["Leadership", "Operations", "Strategy"],
       },
       {
         id: "2",
         url: "/team/natasha.png",
         title: "Natasha",
-        description: "CEO & Founder",
+        description: "Team Administrator",
         tags: ["Vision", "Leadership", "Growth"],
       },
-      {
-        id: "3",
-        url: "/team/tyler.png",
-        title: "Tyler",
-        description: "Chief Technology Officer",
-        tags: ["Engineering", "Architecture", "DevOps"],
-      },
-    ],
-  },
-  {
-    group: "Operations & Support",
-    members: [
-      {
-        id: "12",
-        url: "/team/cindy.png",
-        title: "Cindy",
-        description: "Client Support Lead",
-        tags: ["Support", "Onboarding", "Retention"],
-      },
-      {
-        id: "13",
-        url: "/team/karen.png",
-        title: "Karen",
-        description: "Finance Manager",
-        tags: ["Accounting", "Budgeting", "Payroll"],
-      },
+
       {
         id: "14",
         url: "/team/nick.png",
         title: "Nick",
-        description: "Project Coordinator",
+        description: "Director of Operations",
         tags: ["Timelines", "Logistics", "Tasks"],
       },
     ],
   },
   {
-    group: "Sales & Partnerships",
+    group: "Energy Consultants",
     members: [
       {
         id: "8",
@@ -67,6 +42,29 @@ export const teamGroups = [
         title: "Juan",
         description: "Account Executive",
         tags: ["Growth", "Client Success", "Follow-Up"],
+      },
+
+      {
+        id: "3",
+        url: "/team/tyler.png",
+        title: "Tyler",
+        description: "Chief Technology Officer",
+        tags: ["Engineering", "Architecture", "DevOps"],
+      },
+
+      {
+        id: "12",
+        url: "/team/cindy.png",
+        title: "Cindy",
+        description: "Client Support Lead",
+        tags: ["Support", "Onboarding", "Retention"],
+      },
+      {
+        id: "13",
+        url: "/team/karen.png",
+        title: "Karen",
+        description: "Finance Manager",
+        tags: ["Accounting", "Budgeting", "Payroll"],
       },
     ],
   },

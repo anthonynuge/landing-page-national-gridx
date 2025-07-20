@@ -10,17 +10,17 @@ const stats = [
   },
   {
     label: "Clients Served",
-    value: 150,
+    value: 2000,
     suffix: "+",
   },
   {
     label: "Deals Closed",
-    value: 3500,
+    value: 2700,
     suffix: "+",
   },
   {
     label: "kWh Managed",
-    value: 48000000,
+    value: 42000000,
     suffix: "+",
   },
 ];
