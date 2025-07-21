@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import ButtonCrossArrow from "../shared/ButtonCrossArrow";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden w-full h-screen text-white">
@@ -32,7 +31,6 @@ export default function Hero() {
               We simplify energy decisions so your business can operate smarter,
               faster, and more efficiently.
             </p>
-            <ButtonCrossArrow text="Contact me" href="/contact" />
           </div>
         </div>
       </div>
