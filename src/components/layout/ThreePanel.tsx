@@ -33,6 +33,7 @@ export default function ThreePanel({
                 src={item.image}
                 alt={item.title}
                 fill
+                sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 33vw, 400px"
                 className="object-cover rounded-lg"
               />
             </div>

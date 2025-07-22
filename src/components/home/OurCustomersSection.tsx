@@ -6,12 +6,13 @@ const logos = [
   "/logos/intuit.svg",
   "/logos/lg.svg",
   "/logos/sidekicks.png",
-  "/logos/intuit.svg",
-  "/logos/lg.svg",
-  "/logos/sidekicks.png",
-  "/logos/intuit.svg",
-  "/logos/lg.svg",
-  "/logos/sidekicks.png",
+  "/logos/FAM.png",
+  "/logos/Gongcha.png",
+  "/logos/PIG.png",
+  "/logos/Happinet.png",
+  "/logos/UrbanAir.webp",
+  "/logos/alliant.png",
+  "/logos/fengcha.png",
 ];
 
 const OurCustomersSection = () => {
@@ -39,6 +40,7 @@ const OurCustomersSection = () => {
                 alt="Client logo"
                 fill
                 className="object-contain"
+                sizes="(max-width: 768px) 96px, 160px"
               />
             </div>
           ))}

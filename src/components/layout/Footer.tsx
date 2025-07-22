@@ -29,6 +29,8 @@ export default function Footer() {
               alt="NGX Energy"
               width={140}
               height={40}
+              sizes="140px"
+              style={{ width: "140px", height: "auto" }}
             />
           </div>
           <p className="text-sm max-w-sm text-gray-400 mb-4">

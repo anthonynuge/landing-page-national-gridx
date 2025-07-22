@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-export default function Hero() {
+import ScrollToButton from "../shared/ScrollToButton";
+
+interface HeroSectionProps {
+  scrollTargetId?: string;
+}
+
+export default function Hero({ scrollTargetId = "start" }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden w-full h-screen text-white">
       <Image
@@ -31,6 +37,7 @@ export default function Hero() {
               We simplify energy decisions so your business can operate smarter,
               faster, and more efficiently.
             </p>
+            <ScrollToButton targetId={scrollTargetId} />
           </div>
         </div>
       </div>

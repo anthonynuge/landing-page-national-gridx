@@ -10,8 +10,9 @@ import CaseStudySection from "@/components/shared/CaseStudySection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroSection scrollTargetId="start" />
       <PageWrapper className="mt-24 md:mt-32 space-y-24 md:space-y-52">
+        <span id="start" />
         <ServiceSection />
         <StatsSection />
       </PageWrapper>

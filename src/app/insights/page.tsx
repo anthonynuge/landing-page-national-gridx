@@ -12,9 +12,8 @@ export default function InsightsPage() {
         scrollTargetId="start"
       />
       <PageWrapper className="space-y-24 md:space-y-52">
-        <div id="start">
-          <ArticleGrid />
-        </div>
+        <span id="start" />
+        <ArticleGrid />
       </PageWrapper>
     </>
   );

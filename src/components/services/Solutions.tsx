@@ -59,6 +59,7 @@ export default function SolutionsSection() {
               alt="Workers inspecting site"
               fill
               className="object-cover w-full h-full rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 100vw"
             />
           </div>
         </div>

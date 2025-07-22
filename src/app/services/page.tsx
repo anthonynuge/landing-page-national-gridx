@@ -22,9 +22,8 @@ export default function ServicesPage() {
         scrollTargetId="start"
       />
       <PageWrapper className="space-y-24 md:space-y-52">
-        <div id="start">
-          <PropositionSection />
-        </div>
+        <span id="start" />
+        <PropositionSection />
         <SolutionsSection />
         <ServiceSlider />
         <FaqSection />
