@@ -18,9 +18,8 @@ export default function ContactPage() {
         scrollTargetId="start"
       />
       <PageWrapper>
-        <div id="start">
-          <ContactForm />
-        </div>
+        <span id="start" />
+        <ContactForm />
       </PageWrapper>
 
       <InfoSection />

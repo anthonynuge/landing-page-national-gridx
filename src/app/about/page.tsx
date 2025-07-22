@@ -19,9 +19,8 @@ export default function AboutPage() {
       />
       <PageWrapper>
         {/* <Expertise /> */}
-        <div id="start">
-          <TeamSection />
-        </div>
+        <span id="start" />
+        <TeamSection />
       </PageWrapper>
     </>
   );
