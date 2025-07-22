@@ -10,12 +10,14 @@ export default function CaseStudySection() {
             Featured Case Study
           </p>
 
-          <div className="flex items-center gap-2 mb-4">
+          <div className="mb-4 h-[4rem]">
             <Image
               src="/logos/NGXwhite.png"
               alt="NGX Energy Logo"
               width={100}
               height={100}
+              sizes="100px"
+              style={{ width: "100px", height: "auto" }} // Explicit width to override flex
             />
           </div>
 
@@ -49,6 +51,7 @@ export default function CaseStudySection() {
             alt="NGX Energy Client Building"
             fill
             className="rounded-lg object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 100vw"
           />
         </div>
       </div>

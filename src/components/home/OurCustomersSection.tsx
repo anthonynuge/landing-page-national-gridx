@@ -40,6 +40,7 @@ const OurCustomersSection = () => {
                 alt="Client logo"
                 fill
                 className="object-contain"
+                sizes="(max-width: 768px) 96px, 160px"
               />
             </div>
           ))}
