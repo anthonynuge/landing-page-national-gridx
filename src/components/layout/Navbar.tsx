@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import BtnHoverUnderline from "../shared/BtnHoverUnderline";
 import HamburgerToggle from "../shared/HamburgerToggle";
@@ -9,23 +9,48 @@ import ButtonCrossArrow from "../shared/ButtonCrossArrow";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 120);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 shadow-sm bg-white">
-      <div className="max-w-7xl mx-auto flex items-center px-4 py-3 md:py-4 gap-12">
+      <div
+        className={`max-w-7xl mx-auto flex items-center px-4 py-2 md:py-4 transition-all duration-300 ease-in-out gap-12 ${
+          scrolled ? "scale-100" : " scale-100 2xl:scale-107"
+        }`}
+      >
         {/* Logo */}
-        <div className="flex items-center">
-          <Link href="/">
+        <Link href="/">
+          <div className="relative w-30 h-10">
+            {/* Full Logo */}
             <Image
-              src="/logos/nationalgridblack.png"
-              alt="Logo"
-              width={80}
-              height={80}
-              className=" w-auto"
+              src="/logos/fullLogo.png"
+              alt="Full Logo"
+              fill
+              className={`absolute top-0 left-0 object-contain transition-all duration-300 ease-in-out 
+                ${scrolled ? "opacity-0 scale-100" : "opacity-100 scale-100"}`}
+              style={{ transitionProperty: "opacity, transform" }}
               priority
             />
-          </Link>
-        </div>
+
+            {/* Short Logo */}
+            <Image
+              src="/logos/nationalgridblack.png"
+              alt="Short Logo"
+              fill
+              className={`absolute top-0 left-0 object-contain transition-all duration-300 ease-in-out 
+                ${scrolled ? "opacity-100 scale-90" : "opacity-0 scale-0"}`}
+              style={{ transitionProperty: "opacity, transform" }}
+            />
+          </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden flex-1 md:flex space-x-8 text-sm font-medium text-gray-800">
