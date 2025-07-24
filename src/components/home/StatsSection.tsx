@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import AnimatedNumber from "../animations/AnimatedNumber";
 
 const stats = [
@@ -46,8 +47,17 @@ export default function StatsSection() {
           ))}
         </div>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2">
-          <div className="text-black space-y-4 mx-auto text-sm md:text-base 2xl:text-xl leading-relaxed col-start-2">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="relative h-[600px]">
+            <Image
+              src="/home/numbers.jpg"
+              alt="Stats image"
+              fill
+              className="object-bottom object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+            />
+          </div>
+          <div className="text-black space-y-4 mx-auto text-sm md:text-base 2xl:text-lg leading-relaxed col-start-2">
             <p>
               NGX Energy is a Texas-based energy brokerage built on
               transparency, performance, and long-term client relationships.
