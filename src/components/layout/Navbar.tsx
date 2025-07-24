@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import BtnHoverUnderline from "../shared/BtnHoverUnderline";
 import HamburgerToggle from "../shared/HamburgerToggle";
-import ButtonCrossArrow from "../shared/ButtonCrossArrow";
+import CoolBtn from "../shared/CoolBtn";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,7 +61,7 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-          <ButtonCrossArrow text="Contact Us" href="/contact" />
+          <CoolBtn href="/contact" label="Contact Us" />
         </div>
 
         {/* Mobile Menu Button */}
