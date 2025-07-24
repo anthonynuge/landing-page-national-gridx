@@ -2,33 +2,35 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { SERVICES } from "./constants";
+import { INDUSTRIES } from "./constants";
 import { Button } from "../ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
-export default function ServiceSlider() {
-  const [serviceIdx, setServiceIdx] = useState(0);
-  const service = SERVICES[serviceIdx];
+export default function IndustrySlider() {
+  const [industryIdx, setIndustryIdx] = useState(0);
+  const industry = INDUSTRIES[industryIdx];
   const [direction, setDirection] = useState(0);
 
   const handlePrev = () => {
     setDirection(1);
-    setServiceIdx((prev) => (prev - 1 + SERVICES.length) % SERVICES.length);
+    setIndustryIdx(
+      (prev) => (prev - 1 + INDUSTRIES.length) % INDUSTRIES.length
+    );
   };
   const handleNext = () => {
     setDirection(-1);
-    setServiceIdx((prev) => (prev + 1) % SERVICES.length);
+    setIndustryIdx((prev) => (prev + 1) % INDUSTRIES.length);
   };
 
   return (
     <section className="">
       <div className="relative max-w-7xl mx-auto h-160">
         <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
-          What we do
+          Industries
         </p>
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-          Our Services
+          We Serve
         </h2>
         {/* slider */}
         {/* left */}
@@ -37,16 +39,16 @@ export default function ServiceSlider() {
           <div className="flex flex-col space-y-6 h-full">
             <AnimatePresence mode="wait">
               <motion.div
-                key={service.title}
+                key={industry.title}
                 initial={{ x: direction > 0 ? 25 : -25, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: direction > 0 ? -25 : 25, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
                 <h3 className="text-2xl md:text-4xl font-semibold mt-2 md:mt-16 mb-6">
-                  {service.title}
+                  {industry.title}
                 </h3>
-                <p className="flex-1 text-lg">{service.summary}</p>
+                <p className="flex-1 text-lg">{industry.summary}</p>
               </motion.div>
             </AnimatePresence>
 
@@ -76,7 +78,7 @@ export default function ServiceSlider() {
         <div className="h-1/2 md:h-full w-full md:w-3/4 z-20 block md:absolute top-1/2 -translate-y-1/2 right-0">
           <AnimatePresence mode="wait">
             <motion.div
-              key={service.image}
+              key={industry.image}
               initial={{ x: direction > 0 ? 25 : -25, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: direction > 0 ? -25 : 25, opacity: 0 }}
@@ -84,8 +86,8 @@ export default function ServiceSlider() {
               className="absolute inset-0"
             >
               <Image
-                src={service.image}
-                alt={service.title}
+                src={industry.image}
+                alt={industry.title}
                 fill
                 className="object-cover rounded-lg"
               />
