@@ -34,7 +34,7 @@ export default function WhyUsSection() {
                       {text}
                     </span>
                     <span className="text-sm text-gray-600 group-hover:text-black">
-                      Read More ↗
+                      Read More
                     </span>
                   </div>
                   <div className="relative h-[1px] bg-border overflow-hidden">
