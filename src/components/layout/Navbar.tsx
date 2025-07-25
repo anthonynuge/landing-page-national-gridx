@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import BtnHoverUnderline from "../shared/BtnHoverUnderline";
 import HamburgerToggle from "../shared/HamburgerToggle";
 import CoolBtn from "../shared/CoolBtn";
@@ -12,59 +12,65 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 800);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 800);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const logoBaseClass =
+    "absolute top-0 left-0 object-contain transition-all duration-300 ease-in-out";
+  const logoTransitionStyle = { transitionProperty: "opacity, transform" };
+
   return (
-    <header className="sticky top-0 z-50 shadow-sm bg-white ">
+    <header className="sticky top-0 z-50 shadow-sm bg-white">
+      {/* Top Bar */}
       <div
-        className={`max-w-7xl mx-auto flex items-center px-4 py-2 md:py-4 transition-all duration-300 ease-in-out gap-12 ${
-          scrolled ? "scale-100" : " scale-100 2xl:scale-107"
+        className={`max-w-7xl mx-auto flex items-center px-4 py-2 md:py-4 gap-12 transition-all duration-300 ease-in-out ${
+          scrolled ? "scale-100" : "2xl:scale-107"
         }`}
       >
         {/* Logo */}
-        <Link href="/">
-          <div className="relative w-25 h-8 2xl:w-30 2xl:h-10">
-            {/* Full Logo */}
-            <Image
-              src="/logos/fullLogo.png"
-              alt="Full Logo"
-              fill
-              className={`absolute top-0 left-0 object-contain transition-all duration-300 ease-in-out 
-                ${scrolled ? "opacity-0 scale-100" : "opacity-100 scale-100"}`}
-              style={{ transitionProperty: "opacity, transform" }}
-              priority
-            />
-
-            {/* Short Logo */}
-            <Image
-              src="/logos/nationalgridblack.png"
-              alt="Short Logo"
-              fill
-              className={`absolute top-0 left-0 object-contain transition-all duration-300 ease-in-out 
-                ${scrolled ? "opacity-100 scale-90" : "opacity-0 scale-0"}`}
-              style={{ transitionProperty: "opacity, transform" }}
-            />
-          </div>
+        <Link
+          href="/"
+          className="relative w-25 h-8 2xl:w-30 2xl:h-10 block"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Image
+            src="/logos/fullLogo.png"
+            alt="Full Logo"
+            fill
+            className={`${logoBaseClass} ${
+              scrolled ? "opacity-0 scale-100" : "opacity-100 scale-100"
+            }`}
+            sizes="100px"
+            style={logoTransitionStyle}
+            priority
+          />
+          <Image
+            src="/logos/nationalgridblack.png"
+            alt="Short Logo"
+            fill
+            className={`${logoBaseClass} ${
+              scrolled ? "opacity-100 scale-90" : "opacity-0 scale-0"
+            }`}
+            sizes="100px"
+            style={logoTransitionStyle}
+          />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden flex-1 md:flex space-x-8 text-sm font-medium text-gray-800">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex flex-1 space-x-8 text-sm font-medium text-gray-800">
           <BtnHoverUnderline text="About Us" href="/about" />
           <BtnHoverUnderline text="Services" href="/services" />
           <BtnHoverUnderline text="Insights" href="/insights" />
         </nav>
 
-        {/* Contact Button */}
+        {/* Desktop CTA */}
         <div className="hidden md:block">
           <CoolBtn href="/contact" label="Contact Us" />
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <HamburgerToggle
           isOpen={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -81,35 +87,24 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col gap-8">
-          <Link
-            href="/about"
-            className="text-4xl font-bold"
-            onClick={() => setMenuOpen(false)}
-          >
-            About Us
-          </Link>
-          <Link
-            href="/services"
-            className="text-4xl font-bold"
-            onClick={() => setMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            href="/insights"
-            className="text-4xl font-bold"
-            onClick={() => setMenuOpen(false)}
-          >
-            Insights
-          </Link>
+          {["about", "services", "insights"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item}`}
+              className="text-4xl font-bold"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item[0].toUpperCase() + item.slice(1)}
+            </Link>
+          ))}
           <Link
             href="/contact"
-            className="text-2xl"
             onClick={() => setMenuOpen(false)}
+            className="text-2xl"
           >
-            <button className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition">
+            <div className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition text-center">
               Contact Us
-            </button>
+            </div>
           </Link>
         </div>
       </div>
