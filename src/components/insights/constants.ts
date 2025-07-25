@@ -3,7 +3,7 @@ export const NGX_ARTICLES = [
     title: "How Smart Energy Procurement Saves Businesses Thousands",
     description:
       "Discover how NGX Energy helped a mid-size manufacturing company reduce their annual energy bill by 27% through strategic contract negotiation and usage analytics.",
-    image: "/home/three-panel/construction.jpg",
+    image: "/services/powerLine.jpg",
     date: "2025-07-01",
     author: "NGX Energy Team",
     link: "/articles/smart-procurement-savings",
@@ -33,7 +33,7 @@ export const NGX_ARTICLES = [
     title: "The Future of Renewable Energy for Commercial Buildings",
     description:
       "Explore how commercial real estate owners are integrating solar and wind into their energy mix — and what incentives are available in 2025.",
-    image: "/home/4.jpg",
+    image: "/services/reit.jpg",
     date: "2025-05-10",
     author: "Sophia Nguyen",
     link: "/articles/renewables-commercial-buildings",
