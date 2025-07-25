@@ -6,6 +6,7 @@ import PageWrapper from "@/components/layout/PageWrapper";
 import EmpowerSection from "@/components/home/EmpowerSection";
 import SolutionsSection from "@/components/services/Solutions";
 import CaseStudySection from "@/components/shared/CaseStudySection";
+import WhyUsSection from "@/components/home/WhyUsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PageWrapper className="mt-24 md:mt-32 space-y-24 md:space-y-52">
         <span id="start" />
         <ServiceSection />
+        <WhyUsSection />
         <StatsSection />
       </PageWrapper>
       <OurCustomersSection />

@@ -1,6 +1,7 @@
 "use client";
 
 import { MouseEvent } from "react";
+import { animate } from "framer-motion";
 
 interface ScrollToButtonProps {
   targetId: string;
@@ -11,23 +12,26 @@ export default function ScrollToButton({
   targetId,
   className = "",
 }: ScrollToButtonProps) {
-  const scrollToSection = (e: MouseEvent<HTMLDivElement>) => {
+  const handleClick = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     const target = document.getElementById(targetId);
-    if (target) {
-      const offset = 90;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    if (!target) return;
 
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }
+    const offset = 90;
+    const startY = window.scrollY;
+    const endY = target.getBoundingClientRect().top + window.scrollY - offset;
+    const duration = 0.8;
+
+    animate(startY, endY, {
+      duration: duration,
+      ease: "easeInOut",
+      onUpdate: (latest) => window.scrollTo(0, latest),
+    });
   };
 
   return (
     <div
-      onClick={scrollToSection}
+      onClick={handleClick}
       className={`cursor-pointer p-4 w-12 h-12 flex items-center justify-center bg-white rounded-full group ${className}`}
     >
       <div className="animate-bounce text-black">

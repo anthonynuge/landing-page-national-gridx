@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SolutionsSection() {
   return (
     <section className="h-full">
-      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
         {/* Left Content */}
         <div>
           <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
@@ -36,7 +36,7 @@ export default function SolutionsSection() {
                     {text}
                   </span>
                   <span className="text-sm text-gray-600 group-hover:text-black">
-                    Read More ↗
+                    Read More
                   </span>
                 </div>
                 <div className="relative h-[1px] bg-border overflow-hidden">

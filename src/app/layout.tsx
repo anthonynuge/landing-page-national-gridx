@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Mulish } from "next/font/google";
+import { Mulish } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const mulish = Mulish({
   variable: "--font-mulish",
@@ -35,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${mulish.variable} antialiased`}
-      >
+      <body className={`${mulish.variable} antialiased overflow-x-hidden`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

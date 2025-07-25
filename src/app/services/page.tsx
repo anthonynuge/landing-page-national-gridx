@@ -1,11 +1,12 @@
-import ConsultingServicesSection from "@/components/ConsultingServicesSection";
+import ConsultingServicesSection from "@/components/services/ConsultingServicesSection";
 import PageWrapper from "@/components/layout/PageWrapper";
 import FaqSection from "@/components/services/FaqSection";
 import PropositionSection from "@/components/services/PropositionSection";
-import ServiceSlider from "@/components/services/ServiceSlider";
+import IndustrySlider from "@/components/services/IndustrySlider";
 import SolutionsSection from "@/components/services/Solutions";
 import CaseStudySection from "@/components/shared/CaseStudySection";
 import HeroLayout from "@/components/shared/HeroLayout";
+import ServicesGrid from "@/components/services/ServicesGrid";
 
 export const metadata = {
   title: "Our Services – National Grid X",
@@ -18,14 +19,15 @@ export default function ServicesPage() {
       <HeroLayout
         title="Our Services"
         description="We offer a range of services to help businesses take control of their energy decisions."
-        imageUrl="/services/1.jpg"
+        imageUrl="/services/serviceshero.jpg"
         scrollTargetId="start"
       />
       <PageWrapper className="space-y-24 md:space-y-52">
         <span id="start" />
         <PropositionSection />
+        <ServicesGrid />
         <SolutionsSection />
-        <ServiceSlider />
+        <IndustrySlider />
         <FaqSection />
       </PageWrapper>
       <CaseStudySection />

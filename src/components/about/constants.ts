@@ -4,14 +4,14 @@ export const teamGroups = [
     members: [
       {
         id: "1",
-        url: "/team/anselm.png",
+        url: "/about/team/anselm.png",
         title: "Anselm",
         description: "President",
         tags: ["Leadership", "Operations", "Strategy"],
       },
       {
         id: "2",
-        url: "/team/natasha.png",
+        url: "/about/team/natasha.png",
         title: "Natasha",
         description: "Team Administrator",
         tags: ["Vision", "Leadership", "Growth"],
@@ -19,7 +19,7 @@ export const teamGroups = [
 
       {
         id: "14",
-        url: "/team/nick.png",
+        url: "/about/team/nick.png",
         title: "Nick",
         description: "Director of Operations",
         tags: ["Timelines", "Logistics", "Tasks"],
@@ -31,14 +31,14 @@ export const teamGroups = [
     members: [
       {
         id: "8",
-        url: "/team/jose.png",
+        url: "/about/team/jose.png",
         title: "Jose",
         description: "Sales Manager",
         tags: ["Leads", "Closing", "CRM"],
       },
       {
         id: "9",
-        url: "/team/juan.jpg",
+        url: "/about/team/juan.jpg",
         title: "Juan",
         description: "Account Executive",
         tags: ["Growth", "Client Success", "Follow-Up"],
@@ -46,7 +46,7 @@ export const teamGroups = [
 
       {
         id: "3",
-        url: "/team/tyler.png",
+        url: "/about/team/tyler.png",
         title: "Tyler",
         description: "Chief Technology Officer",
         tags: ["Engineering", "Architecture", "DevOps"],
@@ -54,14 +54,14 @@ export const teamGroups = [
 
       {
         id: "12",
-        url: "/team/cindy.png",
+        url: "/about/team/cindy.png",
         title: "Cindy",
         description: "Client Support Lead",
         tags: ["Support", "Onboarding", "Retention"],
       },
       {
         id: "13",
-        url: "/team/karen.png",
+        url: "/about/team/karen.png",
         title: "Karen",
         description: "Finance Manager",
         tags: ["Accounting", "Budgeting", "Payroll"],
@@ -73,28 +73,28 @@ export const teamGroups = [
     members: [
       {
         id: "4",
-        url: "/team/jessica.png",
+        url: "/about/team/jessica.png",
         title: "Jessica",
         description: "Marketing Director",
         tags: ["Strategy", "Campaigns", "Social"],
       },
       {
         id: "5",
-        url: "/team/ashley.png",
+        url: "/about/team/ashley.png",
         title: "Ashley",
         description: "Copywriter",
         tags: ["Content", "Writing", "SEO"],
       },
       {
         id: "6",
-        url: "/team/minh.jpg",
+        url: "/about/team/minh.jpg",
         title: "Minh",
         description: "Visual Designer",
         tags: ["Branding", "Design", "Creative"],
       },
       {
         id: "7",
-        url: "/team/fanny.jpeg",
+        url: "/about/team/fanny.jpeg",
         title: "Fanny",
         description: "Art Director",
         tags: ["Creative Direction", "Design", "Media"],
