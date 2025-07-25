@@ -1,4 +1,4 @@
-import ConsultingServicesSection from "@/components/ConsultingServicesSection";
+import ConsultingServicesSection from "@/components/services/ConsultingServicesSection";
 import PageWrapper from "@/components/layout/PageWrapper";
 import FaqSection from "@/components/services/FaqSection";
 import PropositionSection from "@/components/services/PropositionSection";

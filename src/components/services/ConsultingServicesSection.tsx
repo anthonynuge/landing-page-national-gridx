@@ -1,5 +1,5 @@
-import ThreePanel from "./layout/ThreePanel";
-import { threePanelItems } from "./services/constants";
+import ThreePanel from "../layout/ThreePanel";
+import { threePanelItems } from "./constants";
 
 const ConsultingServicesSection = () => {
   return (
