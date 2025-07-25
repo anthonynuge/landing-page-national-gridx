@@ -47,7 +47,7 @@ export default function StatsSection() {
           ))}
         </div>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-0 md:gap-8">
           <div className="relative h-[600px]">
             <Image
               src="/home/numbers.jpg"
