@@ -30,17 +30,17 @@ export default function StatsSection() {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-xl uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-12">
+        <h2 className="text-xl uppercase tracking-wide font-bold text-black border-b border-black pb-2 mb-8">
           The Numbers
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:text-center gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:text-center gap-8 mb-8">
           {stats.map((stat, i) => (
             <div key={i}>
               <AnimatedNumber
                 to={stat.value}
                 suffix={stat.suffix}
-                className="text-4xl md:text-5xl font-bold text-black"
+                className="text-4xl md:text-4xl xl:text-5xl font-bold text-black"
               />
               <p className="mt-2 text-sm font-bold text-black">{stat.label}</p>
             </div>

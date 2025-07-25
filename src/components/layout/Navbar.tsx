@@ -13,14 +13,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 120);
+      setScrolled(window.scrollY > 800);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 shadow-sm bg-white">
+    <header className="sticky top-0 z-50 shadow-sm bg-white ">
       <div
         className={`max-w-7xl mx-auto flex items-center px-4 py-2 md:py-4 transition-all duration-300 ease-in-out gap-12 ${
           scrolled ? "scale-100" : " scale-100 2xl:scale-107"
@@ -28,7 +28,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/">
-          <div className="relative w-30 h-10">
+          <div className="relative w-25 h-8 2xl:w-30 2xl:h-10">
             {/* Full Logo */}
             <Image
               src="/logos/fullLogo.png"

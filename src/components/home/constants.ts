@@ -45,3 +45,24 @@ export const NGX_CLIENT_SOLUTIONS = [
     icon: Building2,
   },
 ];
+
+export const threePanelItems = [
+  {
+    title: "Brokerage & Procurement",
+    description:
+      "Customized electricity and gas plans tailored to business usage and goals. Empower negotiates directly with top suppliers to secure competitive rates.",
+    image: "/home/three-panel/windmill.jpg",
+  },
+  {
+    title: "Energy Management Consulting",
+    description:
+      "Analyze, monitor, and optimize your energy usage through detailed reporting and hands-on consulting. We help reduce waste and improve margins.",
+    image: "/home/three-panel/powerline.jpg",
+  },
+  {
+    title: "Compliance & Risk Review",
+    description:
+      "Stay compliant with evolving energy regulations. Empower ensures contracts, usage, and billing align with legal and market standards.",
+    image: "/home/three-panel/engineer2.jpg",
+  },
+];

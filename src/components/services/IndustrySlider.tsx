@@ -35,7 +35,7 @@ export default function IndustrySlider() {
         {/* slider */}
         {/* left */}
         {/* Text Block */}
-        <div className="bg-gray-200 w-full md:w-1/3 z-60 h-1/2 md:h-2/3 block md:absolute top-1/2 -translate-y-1/2 left-0 p-6 rounded-lg overflow-hidden">
+        <div className="bg-gray-200 w-full md:w-1/3 z-30 h-1/2 md:h-2/3 block md:absolute top-1/2 -translate-y-1/2 left-0 p-6 rounded-lg overflow-hidden">
           <div className="flex flex-col space-y-6 h-full">
             <AnimatePresence mode="wait">
               <motion.div

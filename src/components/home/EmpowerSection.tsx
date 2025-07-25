@@ -1,25 +1,5 @@
 import ThreePanel from "../layout/ThreePanel";
-
-const services = [
-  {
-    title: "Brokerage & Procurement",
-    description:
-      "Customized electricity and gas plans tailored to business usage and goals. Empower negotiates directly with top suppliers to secure competitive rates.",
-    image: "/home/three-panel/windmill.jpg",
-  },
-  {
-    title: "Energy Management Consulting",
-    description:
-      "Analyze, monitor, and optimize your energy usage through detailed reporting and hands-on consulting. We help reduce waste and improve margins.",
-    image: "/home/three-panel/construction.jpg",
-  },
-  {
-    title: "Compliance & Risk Review",
-    description:
-      "Stay compliant with evolving energy regulations. Empower ensures contracts, usage, and billing align with legal and market standards.",
-    image: "/home/three-panel/engineer2.jpg",
-  },
-];
+import { threePanelItems } from "./constants";
 
 export default function EmpowerSection() {
   return (
@@ -28,7 +8,7 @@ export default function EmpowerSection() {
         <ThreePanel
           title="Empower Your Energy Decisions"
           subTitle="Energy Solutions"
-          items={services}
+          items={threePanelItems}
         />
       </div>
     </section>

@@ -31,7 +31,7 @@ export const INDUSTRIES = [
     description:
       "Our procurement experts work directly with leading energy suppliers to negotiate contracts specifically aligned with your usage patterns, risk tolerance, and budgetary needs. We leverage market timing, competitive bids, and forward pricing strategies to lock in favorable rates while protecting against market volatility. Whether you operate across multiple states or under a single meter, we customize your energy buying approach for maximum long-term savings and stability.",
     icon: Handshake,
-    image: "/services/energy-procurement.jpg",
+    image: "/services/industries/hospitality.jpg",
   },
   {
     title: "Office Buildings",
@@ -40,7 +40,7 @@ export const INDUSTRIES = [
     description:
       "Gain visibility into your energy consumption and costs with detailed analytics tools that track usage trends, billing anomalies, and peak demand periods. Our platform offers real-time monitoring, usage forecasts, and customizable reports to help you optimize operational efficiency and reduce waste. With these insights, you can identify inefficiencies, verify utility invoices, and make strategic decisions around equipment, schedules, and energy behavior.",
     icon: BarChart3,
-    image: "/services/solar.jpg",
+    image: "/services/industries/office.jpg",
   },
   {
     title: "Warehouse",
@@ -49,7 +49,7 @@ export const INDUSTRIES = [
     description:
       "We offer comprehensive oversight of your energy contracts, including automated alerts for renewal deadlines, performance tracking, and risk analysis. Our system ensures you never miss an opportunity to renegotiate, rebid, or adapt to changing market conditions. By proactively managing each contract, we help you maintain favorable terms, avoid costly rollovers, and respond strategically to utility rate adjustments or regulatory changes.",
     icon: FileText,
-    image: "/services/power.jpg",
+    image: "/services/industries/warehouse.jpg",
   },
   {
     title: "Industrial",
@@ -58,7 +58,7 @@ export const INDUSTRIES = [
     description:
       "Our team provides access to up-to-date market reports, tariff forecasts, and regulatory developments that impact energy pricing and strategy. We interpret complex data into practical guidance tailored to your industry and region, empowering you to hedge effectively, time renewals, and identify emerging opportunities. From natural gas price movements to ISO updates, we help you navigate the energy landscape with confidence.",
     icon: TrendingUp,
-    image: "/services/usage-analytics.jpg",
+    image: "/services/industries/industrial.jpg",
   },
   {
     title: "Restaurant & Retail",
@@ -67,7 +67,7 @@ export const INDUSTRIES = [
     description:
       "We guide businesses through every step of their sustainability journey — from setting achievable ESG goals to integrating renewable energy sources and tracking carbon performance. Our services include sourcing green power, implementing energy efficiency upgrades, and creating detailed sustainability roadmaps that align with your brand and regulatory commitments. Through transparent reporting and actionable steps, we turn your sustainability vision into measurable impact.",
     icon: Leaf,
-    image: "/services/sustainability.jpg",
+    image: "/services/industries/retail.jpg",
   },
   {
     title: "Oil & Gas",
@@ -76,7 +76,7 @@ export const INDUSTRIES = [
     description:
       "Our procurement experts work directly with leading energy suppliers to negotiate contracts specifically aligned with your usage patterns, risk tolerance, and budgetary needs. We leverage market timing, competitive bids, and forward pricing strategies to lock in favorable rates while protecting against market volatility. Whether you operate across multiple states or under a single meter, we customize your energy buying approach for maximum long-term savings and stability.",
     icon: Handshake,
-    image: "/services/energy-procurement.jpg",
+    image: "/services/industries/oil.jpg",
   },
   {
     title: "Agriculture",
@@ -85,7 +85,7 @@ export const INDUSTRIES = [
     description:
       "Gain visibility into your energy consumption and costs with detailed analytics tools that track usage trends, billing anomalies, and peak demand periods. Our platform offers real-time monitoring, usage forecasts, and customizable reports to help you optimize operational efficiency and reduce waste. With these insights, you can identify inefficiencies, verify utility invoices, and make strategic decisions around equipment, schedules, and energy behavior.",
     icon: BarChart3,
-    image: "/services/solar.jpg",
+    image: "/services/industries/agriculture.jpg",
   },
   {
     title: "Education",
@@ -94,7 +94,7 @@ export const INDUSTRIES = [
     description:
       "We offer comprehensive oversight of your energy contracts, including automated alerts for renewal deadlines, performance tracking, and risk analysis. Our system ensures you never miss an opportunity to renegotiate, rebid, or adapt to changing market conditions. By proactively managing each contract, we help you maintain favorable terms, avoid costly rollovers, and respond strategically to utility rate adjustments or regulatory changes.",
     icon: FileText,
-    image: "/services/power.jpg",
+    image: "/services/industries/education.jpg",
   },
   {
     title: "Healthcare",
@@ -103,7 +103,7 @@ export const INDUSTRIES = [
     description:
       "Our team provides access to up-to-date market reports, tariff forecasts, and regulatory developments that impact energy pricing and strategy. We interpret complex data into practical guidance tailored to your industry and region, empowering you to hedge effectively, time renewals, and identify emerging opportunities. From natural gas price movements to ISO updates, we help you navigate the energy landscape with confidence.",
     icon: TrendingUp,
-    image: "/services/usage-analytics.jpg",
+    image: "/services/industries/healthcare.jpg",
   },
   {
     title: "Recycling",
@@ -112,7 +112,7 @@ export const INDUSTRIES = [
     description:
       "We guide businesses through every step of their sustainability journey — from setting achievable ESG goals to integrating renewable energy sources and tracking carbon performance. Our services include sourcing green power, implementing energy efficiency upgrades, and creating detailed sustainability roadmaps that align with your brand and regulatory commitments. Through transparent reporting and actionable steps, we turn your sustainability vision into measurable impact.",
     icon: Leaf,
-    image: "/services/sustainability.jpg",
+    image: "/services/industries/recycling.jpg",
   },
   {
     title: "Data Centers",
@@ -121,6 +121,32 @@ export const INDUSTRIES = [
     description:
       "Our procurement experts work directly with leading energy suppliers to negotiate contracts specifically aligned with your usage patterns, risk tolerance, and budgetary needs. We leverage market timing, competitive bids, and forward pricing strategies to lock in favorable rates while protecting against market volatility. Whether you operate across multiple states or under a single meter, we customize your energy buying approach for maximum long-term savings and stability.",
     icon: Handshake,
-    image: "/services/energy-procurement.jpg",
+    image: "/services/industries/datacenter.jpg",
+  },
+];
+
+export const threePanelItems = [
+  {
+    title: "Optimize Your Energy Use with Expert Audits Tailored to Your Needs",
+    description:
+      "Our Energy Audits identify inefficiencies and recommend actionable improvements to reduce costs.",
+    image: "/services/three-panel/analytics.jpg",
+    alt: "Analytic Dashboard",
+  },
+  {
+    title:
+      "Strategic Energy Procurement to Secure the Best Rates for Your Business",
+    description:
+      "We leverage our market expertise to negotiate favorable energy contracts on your behalf.",
+    image: "/services/three-panel/procurement.jpg",
+    alt: "Warehouse containing shipments.",
+  },
+  {
+    title:
+      "Embrace Sustainability with Our Tailored Renewable Energy Solutions",
+    description:
+      "Our Renewable Energy Solutions help you transition to sustainable sources while saving money.",
+    image: "/services/three-panel/windmill.jpg",
+    alt: "Wind mills generating electricity",
   },
 ];
