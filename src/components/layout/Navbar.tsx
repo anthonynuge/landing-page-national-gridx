@@ -6,10 +6,12 @@ import Image from "next/image";
 import BtnHoverUnderline from "../shared/BtnHoverUnderline";
 import HamburgerToggle from "../shared/HamburgerToggle";
 import CoolBtn from "../shared/CoolBtn";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 150);
@@ -60,9 +62,21 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-1 space-x-8 text-sm font-medium text-gray-800">
-          <BtnHoverUnderline text="About Us" href="/about" />
-          <BtnHoverUnderline text="Services" href="/services" />
-          <BtnHoverUnderline text="Insights" href="/insights" />
+          <BtnHoverUnderline
+            text="About Us"
+            href="/about"
+            currentPath={pathname}
+          />
+          <BtnHoverUnderline
+            text="Services"
+            href="/services"
+            currentPath={pathname}
+          />
+          <BtnHoverUnderline
+            text="Insights"
+            href="/insights"
+            currentPath={pathname}
+          />
         </nav>
 
         {/* Desktop CTA */}
