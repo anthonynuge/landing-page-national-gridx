@@ -17,7 +17,7 @@ export default function ServicesPage() {
   return (
     <>
       <HeroLayout
-        title="Our Services"
+        title="Services"
         description="We offer a range of services to help businesses take control of their energy decisions."
         imageUrl="/services/serviceshero.jpg"
         scrollTargetId="start"

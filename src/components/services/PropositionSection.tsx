@@ -2,7 +2,7 @@ import { Bolt, Globe } from "lucide-react";
 
 export default function PropositionSection() {
   return (
-    <section className="h-full min-h-[90vh] my-auto flex items-center">
+    <section className="h-full flex items-center">
       <div className="max-w-7xl mx-auto space-y-4 md:space-y-12 ">
         <h2 className="text-3xl md:text-4xl xl:text-7xl font-bold text-gray-900 leading-tight mb-12">
           Empowering Businesses and Communities Through Smarter Energy Solutions
