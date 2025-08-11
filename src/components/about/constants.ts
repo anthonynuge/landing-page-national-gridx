@@ -66,6 +66,13 @@ export const teamGroups = [
         description: "Finance Manager",
         tags: ["Accounting", "Budgeting", "Payroll"],
       },
+      {
+        id: "15",
+        url: "/about/team/SomaSadiq.jpeg",
+        title: "Soma Sadiq",
+        description: "Agent",
+        tags: ["Sales Agent"],
+      },
     ],
   },
   {
