@@ -23,17 +23,19 @@ export default function HeroSection({
 
       {/* Top content */}
       <div className="mt-8 w-full h-[40%] md:h-[30%] mx-auto pr-4 md:pr-0 2xl:max-w-7xl 2xl:mt-22">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-10 grid-rows-3 md:grid-rows-2 2xl:gap-5">
           {/* Heading */}
           <h1 className="text-6xl lg:text-7xl 2xl:text-8xl font-semibold">
             {title}
           </h1>
 
           {/* Description + Scroll Icon */}
-          <div className="flex flex-col justify-between gap-2 md:gap-4 2xl:h-[12rem]">
+          <div className="flex flex-col justify-between gap-2 md:gap-4 place-self-end">
             <p className="text-lg lg:text-xl 2xl:text-2xl font-semibold">
               {description}
             </p>
+          </div>
+          <div className="md:row-start-2 md:col-start-2">
             <ScrollToButton targetId={scrollTargetId} />
           </div>
         </div>
