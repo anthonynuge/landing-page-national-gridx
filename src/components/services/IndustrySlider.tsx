@@ -93,6 +93,7 @@ export default function IndustrySlider() {
                 src={industry.image}
                 alt={industry.title}
                 fill
+                loading="eager"
                 className="object-cover rounded-lg"
               />
             </motion.div>
