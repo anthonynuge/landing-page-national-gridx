@@ -1,7 +1,7 @@
 import TeamSection from "@/components/about/TeamSection";
-// import Expertise from "@/components/Expertise";
 import PageWrapper from "@/components/layout/PageWrapper";
 import HeroLayout from "@/components/shared/HeroLayout";
+import AboutCompanySection from "@/components/about/AboutCompanySection";
 
 export const metadata = {
   title: "About Us – National Grid X",
@@ -18,8 +18,9 @@ export default function AboutPage() {
         scrollTargetId="start"
       />
       <PageWrapper>
-        {/* <Expertise /> */}
         <span id="start" />
+        <AboutCompanySection />
+
         <TeamSection />
       </PageWrapper>
     </>
