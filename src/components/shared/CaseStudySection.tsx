@@ -21,11 +21,11 @@ export default function CaseStudySection() {
             />
           </div>
 
-          <p className="text-lg leading-relaxed mb-6 max-w-lg">
-            By transitioning to strategic procurement and tailored energy
-            audits, NGX Energy helped a major commercial client cut waste, lock
-            in competitive contracts, and secure long-term operational savings.
-          </p>
+          <ul className="text-lg leading-relaxed mb-6 max-w-lg list-disc list-inside">
+            <li>Competitive long-term energy contracts</li>
+            <li>Tailored audits eliminating waste</li>
+            <li>ESG alignment and sustainability integration</li>
+          </ul>
 
           <button className="bg-white text-red-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition mb-8">
             View Full Story →
