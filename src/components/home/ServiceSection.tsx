@@ -46,14 +46,16 @@ export function CarouselSize() {
 export default function ServiceSection() {
   return (
     <section className="h-full w-full flex items-center justify-center">
-      <div className="max-w-7xl w-full px-4 flex flex-col gap-10">
-        <h2 className="text-4xl font-bold">Client Solutions</h2>
-        <p className="text-lg text-muted-foreground max-w-2xl">
-          NGX delivers tailored energy strategies to help your business reduce
-          costs, improve stability, and navigate a rapidly changing market with
-          confidence.
+      <div className="max-w-7xl w-full px-4 flex flex-col">
+        <h2 className="text-4xl font-bold mb-4">What we can do for you</h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mb-4">
+          At National Grid X, we help businesses take control of their energy
+          future. From securing competitive contracts and reducing costs to
+          delivering strategic advice, ESG alignment, and innovative technology
+          solutions, our expertise ensures you gain efficiency, stability, and
+          long-term value.
         </p>
-        <div className="mt-4">
+        <div className="mt-10">
           <CarouselSize />
         </div>
       </div>

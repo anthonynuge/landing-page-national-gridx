@@ -59,21 +59,25 @@ export default function StatsSection() {
           </div>
           <div className="text-black space-y-4 mx-auto text-sm md:text-base 2xl:text-lg leading-relaxed col-start-2">
             <p>
-              NGX Energy is a Texas-based energy brokerage built on
-              transparency, performance, and long-term client relationships.
-              With over a decade in the industry, we’ve helped thousands of
-              businesses find the most competitive electricity and natural gas
-              plans.
+              National Grid X is a diversified energy brokerage and consulting
+              firm dedicated to helping organizations navigate an increasingly
+              complex energy landscape.
             </p>
             <p>
-              From startups to enterprise clients, we manage energy procurement
-              at scale — helping clients lock in rates, reduce usage, and make
-              smarter energy decisions through data-backed strategies.
+              With expertise spanning procurement, utility concierge services,
+              technology platforms, and sustainable infrastructure, we deliver
+              tailored solutions that drive efficiency, cost savings, and
+              long-term value.
             </p>
             <p>
-              Our broker network, supplier relationships, and hands-on support
-              model ensure we’re not just a vendor, but a strategic energy
-              partner.
+              Our multi-vertical approach allows us to serve clients across
+              industries while aligning with their operational goals and ESG
+              commitments.
+            </p>
+            <p>
+              At National Grid X, we combine market insight, innovation, and
+              strategic guidance to empower businesses to take control of their
+              energy future.
             </p>
           </div>
         </div>

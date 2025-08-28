@@ -33,9 +33,9 @@ export default function Hero({ scrollTargetId = "start" }: HeroSectionProps) {
 
           {/* Right - Description aligned bottom right */}
           <div className="flex flex-col items-end justify-end w-full md:w-1/2 pb-12 gap-4">
-            <p className="text-lg md:text-2xl max-w-md text-right font-bold">
-              We simplify energy decisions so your business can operate smarter,
-              faster, and more efficiently.
+            <p className="text-lg md:text-2xl max-w-md  font-bold">
+              Lower costs, smarter contracts, sustainable solutions — all
+              tailored to your business
             </p>
             <ScrollToButton targetId={scrollTargetId} />
           </div>
