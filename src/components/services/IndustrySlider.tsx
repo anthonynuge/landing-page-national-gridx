@@ -25,13 +25,10 @@ export default function IndustrySlider() {
 
   return (
     <section className="">
+      <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+        Industries We Serve
+      </h2>
       <div className="relative max-w-7xl mx-auto h-160">
-        <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">
-          Industries
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-          We Serve
-        </h2>
         {/* slider */}
         {/* left */}
         {/* Text Block */}
