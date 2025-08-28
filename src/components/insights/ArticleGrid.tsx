@@ -1,6 +1,6 @@
 import SectionHeader from "../shared/SectionHeader";
 import ArticleCard from "./ArticleCard";
-import { NGX_ARTICLES } from "./constants";
+import { ARTICLES } from "./constants";
 
 export default function ArticleGrid() {
   return (
@@ -10,7 +10,7 @@ export default function ArticleGrid() {
         title="Stay ahead of the curve"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {NGX_ARTICLES.map((article, index) => (
+        {ARTICLES.map((article, index) => (
           <ArticleCard key={index} {...article} />
         ))}
       </div>
